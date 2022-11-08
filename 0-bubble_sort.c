@@ -9,7 +9,8 @@
  */
 int check_sorted(int *array, size_t size)
 {
-	int sorted = 1, i;
+	int sorted = 1;
+	size_t i;
 
 	for (i = 0; i < (size - 1); i++)
 	{
@@ -29,7 +30,8 @@ int check_sorted(int *array, size_t size)
  */
 void bubble_sort(int *array, size_t size)
 {
-	int temp, i;
+	int temp;
+	size_t i;
 
 	while (!check_sorted(array, size))
 	{
